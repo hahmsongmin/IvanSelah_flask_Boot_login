@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Checkout example · Bootstrap v5.0</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/checkout/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="/static/form-validation.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img
+            class="d-block mx-auto mb-4"
+            src="/static/brand/social-apple.svg"
+            alt=""
+            width="150"
+            height="100"
+          />
+          <h2>회원가입</h2>
+        </div>
+        <div class="join-box">
+          <form action="/myhome/set_join" method="post">
+            <input type="email" class="form-control" placeholder="Email" aria-label="First name" name="user_email" required autocomplete="off">
+            <input type="password" class="form-control" placeholder="Password" aria-label="Last name" name="user_password" required>
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-0">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1" required>
+                  <label class="form-check-label" for="gridCheck1">
+                    로봇이아닙니다.
+                  </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">가입하기</button>
+          </form>
+        </div>
+      </div>
+      </main>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2021 IvanSelah</p>
+      </footer>
+    </div>
+
+    <script src="/static/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/static/dist/js/form-validation.js"></script>
+  </body>
+</html>
