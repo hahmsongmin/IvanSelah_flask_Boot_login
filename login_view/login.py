@@ -10,7 +10,7 @@ def set_login():
     try:
         if request.method == 'POST':
             user = User.find(request.form['user_email'], request.form['user_password'])
-            print(request.form['user_email'], request.form['user_password'])
+            # print(request.form['user_email'], request.form['user_password'])
             login_user(user)
             return redirect(url_for('login.mytving'))
     except:
@@ -20,7 +20,7 @@ def set_login():
 def set_join():
     user = User.find(request.form['user_email'], request.form['user_password'])
     if user == None:
-        print(request.form['user_email'], request.form['user_password'])
+        # print(request.form['user_email'], request.form['user_password'])
         user = User.create(request.form['user_email'], request.form['user_password'])
 
     login_user(user)
